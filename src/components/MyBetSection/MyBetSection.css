@@ -1,0 +1,81 @@
+.myBetContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+.all-cards {
+  padding-top: 14px;
+  padding-bottom: 8px;
+  gap: 1rem;
+  align-items: center;
+  width: 85%;
+  /* margin: 8%; */
+  overflow-y: auto;
+  margin-inline: 8%;
+  margin-top: 2%;
+}
+
+body {
+  background-color: #292828;
+}
+
+.backIcon {
+  width: 20px;
+  height: 20px;
+  gap: 4px;
+}
+
+.reloadIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.backIconContainer {
+  display: flex;
+}
+
+.myBetNavBar {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+ 
+  background-color: #292828;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  margin-left: 23%;
+  font-weight: 700;
+  /* border: 1px solid red; */
+  top: 0;
+  color: white;
+  height: 50px;
+  position: fixed;
+}
+
+@media  (max-width: 768px) {
+  .myBetNavBar {
+    margin-left: 4%;
+    width: 91%;
+  }
+
+  .myBetContainer{
+    margin-top: 25px;
+  }
+}
+
+
+
+
+
+/* 
+@media  (max-width: 1200px) {
+  .myBetNavBar {
+    margin-left: 5%;
+    width: 88%;
+  }
+} */
+

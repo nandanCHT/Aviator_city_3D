@@ -1,0 +1,190 @@
+.submit-button {
+  width: 100%;
+  background-color: #22c55e; 
+  color: #f8fafa;
+  border: none; 
+  padding-inline: 1.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  margin-inline: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-button:hover {
+  transform: none;
+}
+
+.submit-button:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); Add custom focus ring */
+}
+
+.cancel-button {
+  width: 100%;
+  background-color: #ef4444; 
+  color: #f8fafa; 
+  border: none; 
+  padding-inline: 1.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  opacity: 1;
+  margin-inline: 5px;
+}
+
+.wating-round {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: rgb(100 116 139 / 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-inline: 5px;
+}
+
+.bet-placed {
+  width: 100%;
+  background-color: var(--gray); 
+  color: #f8fafa; 
+  border: none; 
+  
+  padding-inline: 1.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  margin-inline: 5px;
+}
+
+.bet-place-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cash-out {
+  width: 100%;
+  background-color: var(--success); 
+  color: #f8fafa; 
+  border: none; 
+  
+  padding-inline: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  margin-inline: 5px;
+}
+
+.cash-out-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+   /* padding-inline: 1.25rem;
+   margin-inline: 5px; */
+  /* padding-top: 2px;
+  padding-bottom: 2px; */
+}
+
+.Bet-placed {
+  width: 100%;
+  background-color: var(--gray); 
+  color: #f8fafa; 
+  border: none; 
+  
+  padding-inline: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  margin-inline: 5px;
+  
+}
+
+.no-balance{
+   width: 100%;
+  background-color: var(--orange); 
+  color: #f8fafa; 
+  border: none; 
+  
+  padding-inline: 1.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  font-weight: 700;
+  margin-inline: 5px;
+}
+/* 
+.shimmer {
+  position: relative;
+  top: -10px;
+  left: 0;
+  width: 50%;
+  height: 200%;
+  background-color: yellow;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  animation: 0.5s linear 1s infinite alternate slidein;
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
+
+@media (max-width:640px){
+  .wating-round{
+    font-size: 12px;
+  }
+
+  .Bet-placed{
+    padding-inline: 0;
+  }
+
+  .submit-button{
+    padding-inline: 0;
+  }
+
+  .cancel-button{
+    padding-inline: 0;
+  }
+
+  .cash-out{
+    padding-inline: 0;
+  }
+
+  .no-balance{
+    font-size: 0.75rem;
+  }
+}

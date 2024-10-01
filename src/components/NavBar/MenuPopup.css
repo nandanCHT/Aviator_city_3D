@@ -1,0 +1,53 @@
+.menu-popup-overlay {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.nev-bet {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-popup {
+  background-color: var(--cardBg);
+  border-radius: 5px;
+  width: 16rem;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3.2rem;
+  margin-right: 2.2rem;
+  border: 1px solid #9196a5;
+  border-radius: 8px;
+}
+
+.menu-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-popup li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu-popup li:hover {
+  background: #8f7e7e;
+}
+
+@media (max-width: 768px) {
+  .menu-popup {
+    margin-top: 2.2rem;
+    margin-right: 0;
+  }
+}

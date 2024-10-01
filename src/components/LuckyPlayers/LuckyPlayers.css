@@ -1,0 +1,206 @@
+.lp_Main {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.lucky-plyer-main {
+  background-color: #443135;
+  border-radius: 1.5rem;
+  border-top-left-radius: 0px;
+  /* border-top-right-radius: 1.5rem; */
+  border: 1px solid #9196a5;
+  color: #f1f1f1;
+  margin-top: 1.5rem;
+  position: relative;
+  /* margin-top: 20px; */
+}
+
+.lp_main2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+  padding: 10px 20px;
+  justify-content: end;
+}
+
+.LP_Main3 {
+  position: relative;
+  background-color: #443135;
+  border: 1px solid #9196a5;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  /* width: 170px; */
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  /* top: -5px; */
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  margin-top: 0.5rem;
+}
+
+.lp-main4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f8fafa;
+}
+
+.lp_p {
+  font-size: 12px;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+.lp_q {
+  margin-top: 3px;
+}
+
+/* Add this to your CSS file */
+.scrollable-content {
+  /* height: 300px; Adjust this height as needed */
+  overflow-y: auto;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+
+  /* max-height: 350px; */
+}
+
+.l-td {
+  display: flex;
+  gap: 5px;
+  /* align-items: center; */
+}
+
+.bet-total {
+  color: var(--tableText);
+  font-weight: 800;
+}
+
+.lucky-multiplier {
+  font-weight: 800;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  backdrop-filter: blur(7px);
+
+  /* z-index: 1; Ensure the header stays above the table rows */
+}
+
+.lucky-plyerUpper {
+  padding: 4px;
+  display: flex;
+  gap: 6px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  padding-left: 1rem;
+  background-color: #ad9da04f;
+}
+
+td {
+  padding: 8px;
+  padding-left: 1rem;
+}
+
+/* Scrollable content container */
+.scrollable-content {
+  /* padding: 10px; */
+  max-height: 350px;
+  height: 350px;
+}
+
+/* Custom scrollbar */
+.scrollable-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+.win-th {
+  border-top-right-radius: 1.5rem;
+}
+
+.tBody {
+  background-color: var(--tablegray);
+  font-size: 12px;
+  /* position: relative; */
+  max-height: 350px;
+  height: 350px;
+  width: 100%;
+  overflow: auto;
+}
+table tbody {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+table tbody tr {
+  width: 100%;
+  height: 20px;
+}
+.table-tr {
+  font-size: 12px;
+}
+
+.from-cardBg {
+  background-image: linear-gradient(
+    to top,
+    /* Assuming the gradient is to the top */ gray 0%,
+    /* Starting color */ hsla(0, 0%, 100%, 0) 100%
+      /* Ending color with transparency */
+  );
+}
+
+.square-2 {
+  /* position: fixed; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background: linear-gradient(to top, #342428, hsla(0, 0%, 100%, 0));
+}
+
+tbody td{
+  background-color: rgb(156 163 175 / 20%);
+}
+

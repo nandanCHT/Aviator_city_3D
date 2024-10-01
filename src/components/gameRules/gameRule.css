@@ -1,0 +1,24 @@
+.main-gameRule {
+  width: 97%;
+  /* padding: auto; */
+}
+.text-gameRule {
+  padding: 8px;
+  color: white;
+  font-weight: 700;
+}
+
+.rules-card {
+  border: 1px solid #9196a5;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+
+@media  (max-width: 768px) {
+  .main-gameRule {
+  width: 95%;
+  /* padding: auto; */
+}
+}

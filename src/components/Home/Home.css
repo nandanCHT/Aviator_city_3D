@@ -1,0 +1,305 @@
+.M-full {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.w-full {
+  background-color: #443135;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border: 1px solid #9196a5;
+  display: flex;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.deshboard-upr {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+  padding: 10px 20px;
+  justify-content: end;
+}
+
+.deshboard-upr2 {
+  background-color: #443135;
+  border: 1px solid #9196a5;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  /* width: 140px; */
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  padding-bottom: 4px;
+  top: 4px;
+  left: 0px;
+}
+
+.deshboard-rocket {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #f8fafa;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deshboard-p {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+.num {
+  color: rgb(248, 250, 252);
+  margin-right: 6px;
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+}
+
+/* .button-section {
+  display: flex;
+} */
+
+/* .button-fp {
+} */
+
+.svg-logo {
+  /* background-color: "gray" !important; */
+  /* padding: "10px"; */
+  height: 41px;
+
+  border-radius: 0.5rem;
+}
+
+/*  */
+.submit-button:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); Add custom focus ring */
+}
+/* Add this CSS to your stylesheet */
+.popup {
+  visibility: hidden;
+  min-width: 250px;
+  /* background-color: yellow; */
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#autoCashPopupOn {
+  top: 20px;
+  background-color: #22c55e;
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 15s; */
+}
+
+#autoCashPopupOff {
+  top: 60px; /* Positioned below the 'on' popup */
+  background-color: orange;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 23px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1.5px solid red;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  /* border: 1px solid #22c55e; */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #22c55e;
+  border: 0px;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #22c55e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translate(24px, -1px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* .brdiv {
+  width: 100%;
+  border: 0px solid;
+ 
+  border-radius: 14px;
+ 
+  padding: 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+} */
+
+.doganbutton-slid {
+  /* display: "flex" !important; */
+  align-items: center;
+  /* margin-bottom: 0.5rem; */
+  padding: 4px;
+  /* flex-direction: row; */
+}
+.doganbutton-slid2 {
+  /* display: "flex" !important; */
+  align-items: center;
+  margin-bottom: 0.5rem;
+  /* flex-direction: row; */
+}
+.doganbutton-slid p {
+  margin-left: 1rem;
+}
+
+/* .dash-section {
+  display: flex;
+
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 10px;
+} */
+
+@media (max-width: 768px) {
+  /* .dash-section {
+    flex-direction: column;
+  } */
+  .M-full {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+/* @media (min-width: 600px) {
+  .w-full {
+    margin-top: 4px;
+  }
+} */
+
+.range-slider {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.range-slider input[type="range"] {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.range-slider p {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+/* responsive */
+
+/* .num{
+    margin-bottom: 5px;
+} */
+
+/* .aviator-display{
+  height: 768px;
+  
+} */
+
+@media (max-width: 768px) {
+  .w-full {
+    margin-top: 7px;
+  }
+}
+/* 
+@media (min-width: 375px) {
+  .dash-section {
+    display: flex;
+   
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+} */

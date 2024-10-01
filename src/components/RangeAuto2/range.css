@@ -1,0 +1,28 @@
+.range2 {
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 1px solid #9196a5;
+  border-radius: 9px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+}
+.range-border {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 3px solid #9196a5;
+  border-radius: 5px;
+
+  width: 5rem;
+}
+
+.rInput-x {
+  font-size: 15px;
+  font-size: 900;
+  margin-left: 5px;
+  /* //   padding: 16px */
+}
+.range-font {
+  font-size: 20px;
+  font-weight: 900;
+}

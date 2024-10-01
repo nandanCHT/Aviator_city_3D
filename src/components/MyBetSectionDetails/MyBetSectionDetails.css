@@ -1,0 +1,183 @@
+body {
+  background-color: #292828;
+  font-family: "Montserrat", "Tahoma", "Verdana", "Geneva", sans-serif;
+  color: #fff;
+  /* margin: 0; */
+  /* padding: 20px; */
+}
+
+.container {
+  max-width: 80rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 8px;
+  background-color: #292828;
+  
+}
+
+.backIcon {
+  width: 20px;
+  height: 20px;
+  gap: 4px;
+}
+
+.reloadIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.backIconContainer {
+  display: flex;
+}
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+} */
+
+/* .back-button {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px; */
+/* } */
+
+.data-item {
+  padding: 8px;
+  /* margin-bottom: 5px;  */
+  font-weight: 600;
+}
+
+.label {
+  color: white;
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+.value-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px;
+  background-color: #443135;
+  border: 1px solid #9196a5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.value {
+  color: #ffffff;
+  /* font-size: 16px; */
+  font-weight: 600;
+}
+
+.copy-button {
+  background-color: #443135;
+  color: rgb(34 197 94);
+  border: none;
+  /* padding: 4px 10px; */
+  /* border-radius: 4px; */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 14px;
+}
+
+.player-seed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.seed-label {
+  color: #ffffff;
+
+  font-size: 14px;
+  /* margin-right: 10px; */
+}
+
+.data-item-container {
+  /* width: 100%; */
+  max-width: 43rem;
+  /* height: 100vh; */
+  margin: 0 auto;
+  /* padding-top: 50px; */
+ 
+ 
+  margin-top: 2.2rem;
+  
+}
+
+.seed-lable-gap {
+  margin-right: 8px;
+}
+
+.seed-label-player {
+  color: rgb(209 213 219);
+
+  font-size: 13px;
+  /* margin-right: 10px; */
+}
+
+.v-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.value-long {
+  width: 85%;
+}
+
+.myBetNavBar-2 {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  margin-left: 19rem;
+  position: absolute;
+  z-index: 4;
+  background-color: var(--brandBg);
+}
+
+.backIcon-2 {
+  width: 20px;
+  height: 20px;
+  gap: 4px;
+}
+
+.backIconContainer-2 {
+  display: flex;
+  cursor: pointer;
+}
+
+/* @media (max-width: 649px) {
+  .container {
+    top: 55%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 1.8rem;
+  }
+  .myBetNavBar-2 {
+    padding: 10px;
+  
+    display: flex;
+    margin-left: -3%;
+  }
+}

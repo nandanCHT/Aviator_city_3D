@@ -1,0 +1,169 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.nabvar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid #9196a5;
+}
+.history {
+  display: flex;
+  width: 100%;
+  padding-right: 5px;
+
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.history-btn-container {
+  /* width: 120px; */
+  margin: 5.5px;
+  /* border: 1px solid red; */
+}
+
+.slider-section {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  /* margin: 5.5px; */
+  margin-left: -5px;
+}
+
+@media (max-width: 768px) {
+  /* .slider-section {
+    max-width: 80vw;
+  } */
+
+  .hsName{
+    display: none;
+  }
+  .avi-section {
+    display: none;
+  }
+
+  
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  /* .slider-section {
+    max-width: 88vw;
+  } */
+}
+
+.homeIcon {
+  display: flex;
+  gap: 5px;
+  padding: 1%;
+}
+
+.homeIconImage {
+  margin-top: 2px;
+}
+
+.btn {
+  border-color: white;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.menu p {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user-button {
+  display: flex;
+  font-weight: 700;
+  gap: 5px;
+  border: 1px solid #9196a5;
+  padding: 0.3rem;
+  border-radius: 8px;
+  background-color: #4431;
+}
+
+.historybtn {
+  background-color: rgba(148, 163, 184, 0.4);
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 5px;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /* margin-right: 12px; */
+}
+
+.historyNum {
+  border: 1px solid #22c55e;
+  padding: 6px;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.5rem;
+  padding-inline: 15px;
+}
+
+.historyNumRed {
+  border: 1px solid rgb(249, 115, 22);
+  padding: 6px;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.5rem;
+  padding-inline: 15px;
+}
+
+.colom {
+  width: 10rem;
+  margin-top: 6.2px;
+  padding: 4px;
+}
+
+.button-4:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+.avi-section {
+  font-family: "__Montserrat_a6cbc7,__Montserrat_Fallback_a6cbc7";
+  font-weight: 900;
+}
+
+.menu {
+  position: relative;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+.square {
+  position: absolute ;
+  right: 0;
+  width: 10rem;
+  height: 80%; 
+  background: linear-gradient(
+    to left,
+    hsl(0, 1%, 16%), 
+    hsla(0, 0%, 100%, 0) 
+  );
+}
