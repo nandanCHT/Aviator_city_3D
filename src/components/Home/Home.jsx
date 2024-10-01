@@ -14,6 +14,7 @@ import { socket } from "../../utils/newSocket";
 import "./Home.css";
 import Toast from "../Toast/Toast";
 import MyBetSection from "../MyBetSection/MyBetSection";
+import Simple from "./Simple";
 
 function Home() {
   const [error, setError] = useState("");
@@ -161,7 +162,7 @@ function Home() {
 
   return (
     <div>
-     
+
       {!myBetSectionModel && (
         <div className="flex-container">
           <div>
@@ -172,6 +173,7 @@ function Home() {
               setMyBetSectionModel={setMyBetSectionModel}
             />
           </div>
+
           <div className="game-section">
             <div className="game">
               <Unity
@@ -180,6 +182,12 @@ function Home() {
                 tabIndex={-1}
                 devicePixelRatio={devicePixelRatio}
               />
+
+              <div className="simple-section">
+                <Simple />
+              </div>
+
+
 
               <div className="game-Rule">
                 <GameRule />
@@ -198,9 +206,8 @@ function Home() {
                   </div>
                 </div>
                 <div
-                  className={`tab ${
-                    activeTab === "luckyPlayer" ? "active" : ""
-                  }`}
+                  className={`tab ${activeTab === "luckyPlayer" ? "active" : ""
+                    }`}
                   onClick={() => handleTabChange("luckyPlayer")}
                 >
                   <div className="lucky-group">
@@ -232,9 +239,8 @@ function Home() {
               </div>
 
               <div
-                className={`tab-content ${
-                  activeTab === "dashboard" ? "active" : ""
-                }`}
+                className={`tab-content ${activeTab === "dashboard" ? "active" : ""
+                  }`}
               >
                 {/* <MainDesBoard
                 info={info}
@@ -282,9 +288,8 @@ function Home() {
                 </div>
               </div>
               <div
-                className={`tab-content ${
-                  activeTab === "luckyPlayer" ? "active" : ""
-                }`}
+                className={`tab-content ${activeTab === "luckyPlayer" ? "active" : ""
+                  }`}
               >
                 {/* <LuckyPlayer /> */}
                 <LuckyPlayers
