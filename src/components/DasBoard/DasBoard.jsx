@@ -640,7 +640,14 @@ function DasBoard({
               />
               <span className="slider round"></span>
             </label>
-            <p>Auto Bet </p>
+            <div
+              style={{
+                display: "flex",
+              }}
+            >
+              <p>Auto Bet </p>
+              <p style={{}}>{image.Dots}</p>
+            </div>
           </div>
           <div
             className="doganbutton-slid"
