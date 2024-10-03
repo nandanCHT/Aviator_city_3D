@@ -44,9 +44,11 @@ const Simple = () => {
 
                         <div className='mute-icon' onClick={handleIconClick}>
                             {isMuted ? (
-                                <p>{image.muteIcon}</p>
-                            ) : (
                                 <p>{image.soundIcon}</p>
+
+                            ) : (
+                                <p>{image.muteIcon}</p>
+
                             )}
                         </div>
                     </div>
