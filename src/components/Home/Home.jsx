@@ -15,6 +15,7 @@ import "./Home.css";
 import Toast from "../Toast/Toast";
 import MyBetSection from "../MyBetSection/MyBetSection";
 import Simple from "./Simple";
+import ChartBoard from "./ChartBoard";
 
 function Home() {
   const [error, setError] = useState("");
@@ -31,6 +32,7 @@ function Home() {
   const [toastColor, setToastColor] = useState("");
   const [myBetSectionModel, setMyBetSectionModel] = useState(false);
   const [showBetDataTab, setShowBetDataTab] = useState(false)
+  const [playerCount, setPlayerCount] = useState([]);
 
   // console.log("onCashOut", oneCashout);
   // console.log("cashoutData", cashoutData)
@@ -98,6 +100,10 @@ function Home() {
       });
       socket.on("plane", (data) => {
         setPlaneData(data);
+      });
+
+      socket.on("playerCount", (data) => {
+        setPlayerCount(data);
       });
 
       socket.on("maxOdds", (data) => {
@@ -187,12 +193,20 @@ function Home() {
                 <Simple />
               </div>
 
+              <div className="chart-section">
+                <ChartBoard
+                  playerCount={playerCount}
+                />
+              </div>
 
 
               <div className="game-Rule">
                 <GameRule />
               </div>
+
             </div>
+
+
 
             <div className="deshboard-section">
               <div className="tab-container">
