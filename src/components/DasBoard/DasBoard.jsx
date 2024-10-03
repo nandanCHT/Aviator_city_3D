@@ -282,11 +282,19 @@ function DasBoard({
   };
 
   const handleMinusClick = () => {
-    setBetValue((prevValue) => Math.max(100, prevValue - 50));
+    // setBetValue((prevValue) => Math.max(100, prevValue - 50));
+    setBetValue((prevValue) => {
+      const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
+      return numericValue - 50; // Decrease by 1
+    });
   };
 
   const handlePlusClick = () => {
-    setBetValue((prevValue) => prevValue + 50);
+    // setBetValue((prevValue) => prevValue + 50);
+    setBetValue((prevValue) => {
+      const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
+      return numericValue + 50; // Increase by 1
+    });
   };
 
   const handleButtonClick = (buttonValue) => {

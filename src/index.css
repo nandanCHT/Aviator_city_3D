@@ -280,7 +280,7 @@ body {
 }
 
 
-@media (min-width: 769px) and (max-width: 1800px) {
+@media (min-width: 769px) and (max-width: 5000px) {
   .tab-container {
     display: none !important;
   }
