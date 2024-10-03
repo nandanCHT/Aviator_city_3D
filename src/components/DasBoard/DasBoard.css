@@ -714,10 +714,9 @@ input[type="range"]::-ms-thumb {
     margin-inline: 5px;
     margin-bottom: 4px;
   }
-  
 }
 
-@media(min-width:640px) and (max-width:912px){
+@media (min-width: 640px) and (max-width: 912px) {
   .btn {
     width: 100%;
     display: grid;
