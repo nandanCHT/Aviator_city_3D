@@ -83,14 +83,18 @@ body {
 .game {
   display: flex;
   position: relative;
-  /* justify-content: center; */
   flex-direction: column;
   width: 70%;
 }
 .simple-section {
   position: absolute;
   width: 100%;
+}
 
+.chart-section {
+  position: absolute;
+  width: 100%;
+  top: 335px;
 }
 .game-rules-main {
   width: 100%;
@@ -156,9 +160,6 @@ body {
     width: 100%;
   }
   
-  
-  
-
   .game-Rule {
     position: absolute;
     
@@ -167,6 +168,7 @@ body {
     margin-left: 0;
     top: 100%;
     padding-bottom: 20px;
+    margin-top: 25rem;
   }
 
   
