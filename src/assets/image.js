@@ -1,4 +1,3 @@
-
 export const image = {
   saveImage: (
     <svg
@@ -20,21 +19,6 @@ export const image = {
     </svg>
   ),
 
-  muteIcon: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white"><path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z"></path></svg>
-  ),
-
-  soundIcon: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white"><path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM18.584 5.106a.75.75 0 011.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 11-1.06-1.06 8.25 8.25 0 000-11.668.75.75 0 010-1.06z"></path><path d="M15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z"></path></svg>
-  ),
-
-  chartIcon: (
-    <svg xmlns="http://www.w3.org/2000/svg" class="text-white" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 3v18h18"></path><path d="M9 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M19 7m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M14 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M10.16 10.62l2.34 2.88"></path><path d="M15.088 13.328l2.837 -4.586"></path></svg>
-  ),
-
-  eyeIcon: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-white"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"></path><path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd"></path></svg>
-  ),
 
   delete: (
     <svg
@@ -88,10 +72,6 @@ export const image = {
         fill="#F7F9FB"
       ></path>
     </svg>
-  ),
-
-  iconProvably: (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-green-500"><path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd"></path></svg>
   ),
 
   people: (
@@ -437,6 +417,39 @@ export const image = {
     </svg>
   ),
 
+  Dots: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 cursor-pointer"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+      ></path>
+    </svg>
+  ),
+  cutbutton: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 transition-all duration-500 ease-in-out rotate-[180deg]"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  ),
+
   lockIcon: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -489,6 +502,117 @@ export const image = {
       <defs>
         <clipPath id="clip0_67_1813">
           <rect width="18" height="18" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+  infinite: (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_65_1296)">
+        <path
+          d="M10.0002 10.0001C9.54295 10.8877 8.92987 11.686 8.19022 12.3567C7.72409 12.823 7.13015 13.1406 6.48352 13.2693C5.83689 13.398 5.16661 13.332 4.55747 13.0798C3.94832 12.8275 3.42767 12.4003 3.06135 11.8521C2.69503 11.3039 2.49951 10.6594 2.49951 10.0001C2.49951 9.34077 2.69503 8.69626 3.06135 8.14808C3.42767 7.59989 3.94832 7.17265 4.55747 6.92039C5.16661 6.66813 5.83689 6.60217 6.48352 6.73087C7.13015 6.85957 7.72409 7.17714 8.19022 7.64342C8.92987 8.31419 9.54295 9.11243 10.0002 10.0001ZM10.0002 10.0001C10.4575 9.11243 11.0706 8.31419 11.8102 7.64342C12.2764 7.17714 12.8703 6.85957 13.5169 6.73087C14.1636 6.60217 14.8338 6.66813 15.443 6.92039C16.0521 7.17265 16.5728 7.59989 16.9391 8.14808C17.3054 8.69626 17.5009 9.34077 17.5009 10.0001C17.5009 10.6594 17.3054 11.3039 16.9391 11.8521C16.5728 12.4003 16.0521 12.8275 15.443 13.0798C14.8338 13.332 14.1636 13.398 13.5169 13.2693C12.8703 13.1406 12.2764 12.823 11.8102 12.3567C11.0706 11.686 10.4575 10.8877 10.0002 10.0001Z"
+          stroke="#F7F9FB"
+          stroke-width="2.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_65_1296">
+          <rect width="20" height="20" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+  stopIf: (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_65_1346)">
+        <path
+          d="M4 8C4 7.73478 4.10536 7.48043 4.29289 7.29289C4.48043 7.10536 4.73478 7 5 7H19C19.2652 7 19.5196 7.10536 19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V15C20 15.2652 19.8946 15.5196 19.7071 15.7071C19.5196 15.8946 19.2652 16 19 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V8Z"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7 16V20"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7.5 16L16.5 7"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M13.5 16L20 9.5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M4 13.5L10.5 7"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M17 16V20"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M5 20H9"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M15 20H19"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M17 7V5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7 7V5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_65_1346">
+          <rect width="24" height="24" fill="white"></rect>
         </clipPath>
       </defs>
     </svg>
