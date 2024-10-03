@@ -432,6 +432,22 @@ export const image = {
       ></path>
     </svg>
   ),
+  cutbutton: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6 transition-all duration-500 ease-in-out rotate-[180deg]"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  ),
 
   lockIcon: (
     <svg
@@ -485,6 +501,117 @@ export const image = {
       <defs>
         <clipPath id="clip0_67_1813">
           <rect width="18" height="18" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+  infinite: (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_65_1296)">
+        <path
+          d="M10.0002 10.0001C9.54295 10.8877 8.92987 11.686 8.19022 12.3567C7.72409 12.823 7.13015 13.1406 6.48352 13.2693C5.83689 13.398 5.16661 13.332 4.55747 13.0798C3.94832 12.8275 3.42767 12.4003 3.06135 11.8521C2.69503 11.3039 2.49951 10.6594 2.49951 10.0001C2.49951 9.34077 2.69503 8.69626 3.06135 8.14808C3.42767 7.59989 3.94832 7.17265 4.55747 6.92039C5.16661 6.66813 5.83689 6.60217 6.48352 6.73087C7.13015 6.85957 7.72409 7.17714 8.19022 7.64342C8.92987 8.31419 9.54295 9.11243 10.0002 10.0001ZM10.0002 10.0001C10.4575 9.11243 11.0706 8.31419 11.8102 7.64342C12.2764 7.17714 12.8703 6.85957 13.5169 6.73087C14.1636 6.60217 14.8338 6.66813 15.443 6.92039C16.0521 7.17265 16.5728 7.59989 16.9391 8.14808C17.3054 8.69626 17.5009 9.34077 17.5009 10.0001C17.5009 10.6594 17.3054 11.3039 16.9391 11.8521C16.5728 12.4003 16.0521 12.8275 15.443 13.0798C14.8338 13.332 14.1636 13.398 13.5169 13.2693C12.8703 13.1406 12.2764 12.823 11.8102 12.3567C11.0706 11.686 10.4575 10.8877 10.0002 10.0001Z"
+          stroke="#F7F9FB"
+          stroke-width="2.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_65_1296">
+          <rect width="20" height="20" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+  stopIf: (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_65_1346)">
+        <path
+          d="M4 8C4 7.73478 4.10536 7.48043 4.29289 7.29289C4.48043 7.10536 4.73478 7 5 7H19C19.2652 7 19.5196 7.10536 19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V15C20 15.2652 19.8946 15.5196 19.7071 15.7071C19.5196 15.8946 19.2652 16 19 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V8Z"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7 16V20"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7.5 16L16.5 7"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M13.5 16L20 9.5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M4 13.5L10.5 7"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M17 16V20"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M5 20H9"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M15 20H19"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M17 7V5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M7 7V5"
+          stroke="#F7F9FB"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_65_1346">
+          <rect width="24" height="24" fill="white"></rect>
         </clipPath>
       </defs>
     </svg>

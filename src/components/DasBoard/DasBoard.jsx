@@ -8,6 +8,7 @@ import { HiOutlineMinus } from "react-icons/hi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { formatBalance } from "../../utils/helper";
 import BetButton from "../BetButton/BetButton";
+import CursorPointer from "./CursorPointer/CursorPointer";
 
 function DasBoard({
   info,
@@ -489,7 +490,7 @@ function DasBoard({
                 <HiOutlineMinus />
               </button>
               <input
-                type="text"
+                type="input"
                 onChange={handleInputChange}
                 onFocus={handleInputFocus}
                 // onKeyDown={handleInputKeyDown}
@@ -629,26 +630,53 @@ function DasBoard({
           )}
         </div>
         <div className="doganbutton-main">
-          <div className="doganbutton-slid" style={{ display: "flex" }}>
-            <label className="switch">
-              <input
-                checked={autoBet}
-                type="checkbox"
-                className="Desh_Input"
-                onChange={autoBetToggle}
-                disabled={planeStatus == 0 && Number(endDelay) >= 6}
-              />
-              <span className="slider round"></span>
-            </label>
-            <div
-              style={{
-                display: "flex",
-              }}
-            >
-              <p>Auto Bet </p>
-              <p style={{}}>{image.Dots}</p>
+          <div
+            className=""
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <div className="">
+              <div
+                className="doganbutton-slid"
+                style={{
+                  display: "flex",
+                }}
+              >
+                <label className="switch">
+                  <input
+                    checked={autoBet}
+                    type="checkbox"
+                    className="Desh_Input"
+                    onChange={autoBetToggle}
+                    disabled={planeStatus === 0 && Number(endDelay) >= 6}
+                  />
+                  <span className="slider round"></span>
+                </label>
+                <div
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <div>
+                    <p>Auto Bet </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {autoBet && ( // Show CursorPointer only when autoBet is true
+              <div
+                style={{
+                  marginRight: "2rem",
+                }}
+              >
+                <CursorPointer />
+              </div>
+            )}
           </div>
+
           <div
             className="doganbutton-slid"
             style={{ display: "flex", flexDirection: "row" }}

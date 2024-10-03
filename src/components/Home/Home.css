@@ -218,7 +218,37 @@ input:checked + .slider:before {
   width: 100%;
   margin-top: 10px;
 } */
+.simple-container {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22c55e;
+}
 
+.simple-cont-section {
+}
+.fair-section {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.3rem;  */
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #443135;
+  opacity: 0.5;
+  /* width: 100px; */
+}
+.fair-section p {
+  /* font-weight: 500; */
+  color: white;
+}
+.animation-container {
+}
+.animation-section {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
 @media (max-width: 768px) {
   /* .dash-section {
     flex-direction: column;

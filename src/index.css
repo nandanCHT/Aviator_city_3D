@@ -82,11 +82,16 @@ body {
 }
 .game {
   display: flex;
+  position: relative;
   /* justify-content: center; */
   flex-direction: column;
   width: 70%;
 }
+.simple-section {
+  position: absolute;
+  width: 100%;
 
+}
 .game-rules-main {
   width: 100%;
   padding: 20px;
