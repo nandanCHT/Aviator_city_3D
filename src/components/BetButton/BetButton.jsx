@@ -64,16 +64,14 @@ function BetButton({
         (info?.balance > 20 ? (
           <div>
             {planeStatus == 0 && !showCancel ? (
-              <div
-                class
-                style={{ width: "100%", margin: "4px 0px", display: "flex" }}
-              >
+              <div className="place-btn-container">
                 <button
                   disabled={planeStatus == 0 && Number(endDelay) >= 6}
                   onClick={() => handlePlaceBet(index)}
-                  className="submit-button"
+                  className="bet-btn place-btn"
                   type="button"
                 >
+                  <span className="shimmer"></span>
                   <span>Place Bet</span>
                 </button>
               </div>
@@ -112,6 +110,7 @@ function BetButton({
                         className="cancel-button"
                         type="button"
                       >
+
                         <span>Cancel Bet</span>
                       </button>
                     </div>
@@ -135,25 +134,20 @@ function BetButton({
                         className="cancel-button"
                         type="button"
                       >
-
+                      
                         <span>Cancel Bet</span>
                       </button>
                     </div>
                     <div className="wating-round">Wating for next round</div>
                   </div>
                 ) : (
-                  <div
-                    style={{
-                      width: "100%",
-                      margin: "4px 0px",
-                      display: "flex",
-                    }}
-                  >
+                  <div className="place-btn-container">
                     <button
                       onClick={() => handleNextClick(index)}
-                      className="submit-button"
+                      className="bet-btn place-btn"
                       type="button"
                     >
+                      <span className='shimmer'></span>
                       <span>Next Bet</span>
                     </button>
                   </div>
@@ -208,17 +202,14 @@ function BetButton({
                   </div>
                 ) : (
                   <div
-                    style={{
-                      width: "100%",
-                      margin: "4px 0px",
-                      display: "flex",
-                    }}
+                    className="place-btn-container"
                   >
                     <button
                       onClick={() => handleNextClick(index)}
-                      className="submit-button"
+                      className="bet-btn place-btn"
                       type="button"
                     >
+                      <span className='shimmer'></span>
                       <span>Next Bet</span>
                     </button>
                   </div>

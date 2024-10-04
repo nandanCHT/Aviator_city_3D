@@ -69,16 +69,17 @@ function NavBar({ info, maxOdds, setMyBetSectionModel, myBetSectionModel }) {
                 <span
                   className={
                     item.max_mult >= 10
-                      ? "historyNum-new-yellow"
+                      ? "historyNum-new-yellow shimmer-container"
                       : item.max_mult >= 2
-                      ? "historyNum-new"
-                      : "historyNum-new-Red"
+                        ? "historyNum-new"
+                        : "historyNum-new-Red"
                   }
                 >
                   {item.max_mult >= 10 ? (
                     <>
                       <div>{image.winQueen}</div>
                       {item.max_mult}
+                      <span className="shimmer"></span>
                     </>
                   ) : (
                     item.max_mult
@@ -96,7 +97,7 @@ function NavBar({ info, maxOdds, setMyBetSectionModel, myBetSectionModel }) {
         isOpen={isModalOpen}
         onClose={toggleModal}
         maxOdds={maxOdds}
-      ></Modal>
+      />
       <MenuPopup
         myBetSectionModel={myBetSectionModel}
         setMyBetSectionModel={setMyBetSectionModel}
