@@ -27,7 +27,7 @@ function DasBoard({
   const [betValue, setBetValue] = useState("20");
   const [inputValue, setInputValue] = useState("");
   const [isEdit, setIsEdit] = useState(false);
-  const [buttonValues, setButtonValues] = useState([20, 50, 100, 1000]);
+  const [buttonValues, setButtonValues] = useState([50, 100, 200, 500]);
   // const [buttonValues, setButtonValues] = useState(
   //   JSON.parse(localStorage.getItem("buttonValues")) || [100, 500, 1000, 2000]
   // ); // #1 Get buttonValues from localStorage if available
@@ -63,6 +63,7 @@ function DasBoard({
   // console.log("OneCashOut", oneCashout)
 
   //Function
+
   useEffect(() => {
     if (autoBet) {
       if (planeStatus == 0) {
@@ -282,11 +283,19 @@ function DasBoard({
   };
 
   const handleMinusClick = () => {
-    setBetValue((prevValue) => Math.max(20, prevValue - 50));
+    // setBetValue((prevValue) => Math.max(100, prevValue - 50));
+    setBetValue((prevValue) => {
+      const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
+      return Math.max(20, numericValue - 20); // Decrease by 1
+    });
   };
 
   const handlePlusClick = () => {
-    setBetValue((prevValue) => prevValue + 50);
+    // setBetValue((prevValue) => prevValue + 50);
+    setBetValue((prevValue) => {
+      const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
+      return numericValue + 20; // Increase by 1
+    });
   };
 
   const handleButtonClick = (buttonValue) => {
@@ -326,11 +335,11 @@ function DasBoard({
   };
 
   const handleMax = () => {
-    setBetValue(10000);
+    setBetValue(20000);
   };
 
   const handleReset = () => {
-    setBetValue(100);
+    setBetValue(20);
   };
 
   const handleEdit = () => {
@@ -342,14 +351,15 @@ function DasBoard({
     const value = e.target.value;
     if (/^\d*$/.test(value)) {
       const numericValue = Number(value);
-      setInputValue(numericValue);
+      setInputValue(value);
       setIsWarning(false);
-      if (numericValue >= 100 && numericValue <= 200000) {
+      if (numericValue >= 20 && numericValue <= 10000) {
         setIsValidAmount(false);
       } else {
         setIsValidAmount(true);
       }
     }
+    // setInputValue(e.target.value);
   };
 
   const handleKeyDown = (e) => {
@@ -359,7 +369,7 @@ function DasBoard({
       if (
         !buttonValues.includes(newValue) &&
         newValue > 0 &&
-        newValue >= 100 &&
+        newValue >= 20 &&
         newValue <= 200000
       ) {
         // console.log("Adding new value:", newValue);
@@ -378,7 +388,7 @@ function DasBoard({
     if (
       !buttonValues.includes(newValue) &&
       newValue > 0 &&
-      newValue >= 100 &&
+      newValue >= 20 &&
       newValue <= 200000
     ) {
       // console.log("Adding new value:", newValue);
@@ -399,11 +409,11 @@ function DasBoard({
   const handlerOnBlur = (event) => {
     let numericValue = event.target.value;
     if (isNaN(numericValue) || numericValue === "") {
-      numericValue = 100;
+      numericValue = 20;
     } else {
       // Ensure the value is within the specified range
-      if (numericValue < 100) {
-        numericValue = 100;
+      if (numericValue < 20) {
+        numericValue = 20;
       } else if (numericValue > betValue) {
         numericValue = betValue;
       }
@@ -447,8 +457,8 @@ function DasBoard({
     const match = inputValue.match(/^\d{0,3}(\.\d{0,2})?/);
     if (match) {
       inputValue = match[0];
-      if (parseFloat(inputValue) > 100) {
-        inputValue = "100.00";
+      if (parseFloat(inputValue) > 20) {
+        inputValue = "20.00";
       }
       setAutoMultiplier(inputValue);
     }
@@ -458,8 +468,8 @@ function DasBoard({
     const value = parseFloat(e.target.value);
     if (isNaN(value) || value < 1.01) {
       setAutoMultiplier("1.01");
-    } else if (value > 100) {
-      setAutoMultiplier("100.00");
+    } else if (value > 20) {
+      setAutoMultiplier("20.00");
     } else {
       setAutoMultiplier(value.toFixed(2).toString());
     }
@@ -594,6 +604,7 @@ function DasBoard({
                   type="text"
                   className="edit-input"
                   value={inputValue}
+                  placeholder="0"
                 />
                 {!isValidAmount && (
                   <button
@@ -609,9 +620,11 @@ function DasBoard({
               </div>
               <button
                 className="save-button"
-                style={{
-                  backgroundColor: "#22c55e",
-                }}
+                style={
+                  {
+                    // backgroundColor: "#22c55e",
+                  }
+                }
                 onClick={() => {
                   handleEdit();
                   addStake();
@@ -623,7 +636,7 @@ function DasBoard({
               </button>
               {!isWarning && (
                 <div className="amountBetween">
-                  <p>Amount Between 100 to 20000</p>
+                  <p>Amount Between 20 to 20000</p>
                 </div>
               )}
             </div>

@@ -9,7 +9,7 @@ const GameRule = () => {
           <p>Game Rules</p>
         </div>
         <div className="rules-card">
-          <p className="deshboard-rocket">1. Make your bet before takeoff.</p>
+          <p className="deshboard-rocket"> 1. Make your bet before takeoff.</p>
         </div>
         <div className="rules-card">
           <p className="deshboard-rocket">
