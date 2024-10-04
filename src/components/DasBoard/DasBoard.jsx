@@ -421,22 +421,6 @@ function DasBoard({
     setBetValue(numericValue);
   };
 
-  // const autoBetToggle = (value) => {
-  //   // console.log("Value", value);
-  //   // setAutoBet(true);
-
-  //   // if (autoBet) {
-  //   //   if (planeStatus == 1 && betData?.length > 0) {
-  //   //     setAutoBet(false);
-  //   //   } else {
-  //   //     handleCancelBet();
-  //   //   }
-  //   // }
-  //   setAutoBet(!autoBet)
-  //  setToastMessage(autoBet ? "AutoBet is off" : "AutoBet is on");
-  //   setTimeout(() => setToastMessage(""), 3000);
-  // };
-
   const autoBetToggle = useCallback(() => {
     let newAutoBetState = !autoBet;
     setAutoBet(newAutoBetState);
