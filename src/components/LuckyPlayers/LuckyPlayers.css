@@ -56,6 +56,7 @@
   font-size: 12px;
   font-weight: 700;
   gap: 1rem;
+  cursor: default;
 }
 
 .lp_q {
@@ -200,7 +201,6 @@ table tbody tr {
   background: linear-gradient(to top, #342428, hsla(0, 0%, 100%, 0));
 }
 
-tbody td{
+tbody td {
   background-color: rgb(156 163 175 / 20%);
 }
-
