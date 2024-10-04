@@ -143,6 +143,75 @@
   font-weight: 700;
   margin-inline: 5px;
 }
+.place-btn-container {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.bet-btn {
+  position: relative;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  outline: none;
+  height: 100%;
+  padding: 0.8rem;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-property: all;
+  margin: 4px;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the shimmer stays within the button */
+}
+
+.place-btn {
+  background-color: rgb(34, 197, 94, 1);
+  color: white;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.place-text {
+  line-height: 1.75rem;
+}
+
+.shimmer {
+  position: absolute;
+  top: 0; /* Adjusted to start at the top */
+  left: -150%; /* Start the shimmer off-screen */
+  width: 150%; /* Make the shimmer wide enough to cover the button */
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0) 20%,
+    hsla(0, 12%, 92%, 0.3) 50%,
+    /* Slightly stronger shimmer */ hsla(0, 0%, 100%, 0) 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%); /* Start the shimmer fully off the left */
+  }
+
+  100% {
+    transform: translateX(100%); /* End the shimmer fully off the right */
+  }
+}
+
+
+
+
+
 /* 
 .shimmer {
   position: relative;

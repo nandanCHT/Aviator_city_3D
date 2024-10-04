@@ -67,9 +67,8 @@
 }
 
 .historyNum-new-yellow {
-  border: 1px solid #ffc107;
+  /* border: 1px solid #ffc107; */
   padding-block: 5px;
-  background-color: #ffc107;
   font-weight: 700;
   font-size: 0.875rem;
   color: white;
@@ -79,6 +78,21 @@
   /* width: 6rem; */
   gap: 5px;
   justify-content: center;
+
+  background: linear-gradient(
+    90deg,
+    #ba943e,
+    #ecac20 20%,
+    #ba943e 39%,
+    #f9c85a 50%,
+    #ba943e 60%,
+    #ecac20 80%,
+    #ba943e
+  );
+  background-clip: padding-box;
+  animation: shine 3s infinite;
+  background-size: 300%;
+  background-position: 0;
 }
 
 .historyNum-new-Red {
