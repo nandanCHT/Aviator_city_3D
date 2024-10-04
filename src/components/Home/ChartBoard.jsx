@@ -29,7 +29,7 @@ const ChartBoard = ({ playerCount }) => {
                                 <div className='eye-section'>
                                     <p>{image.eyeIcon}</p>
                                 </div>
-                                <p style={{ fontSize: "12px" }}>{playerCount}</p>
+                                <p style={{ fontSize: "12px", fontWeight: "600" }}>{playerCount}</p>
                             </div>
                         </div>
 
