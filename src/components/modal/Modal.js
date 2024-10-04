@@ -23,7 +23,7 @@ function Modal({ isOpen, onClose, maxOdds }) {
                 <span
                   className={
                     item.max_mult >= 10
-                      ? "historyNum-new-yellow"
+                      ? "historyNum-new-yellow shimmer-container"
                       : item.max_mult >= 2
                         ? "historyNum-new"
                         : "historyNum-new-Red"
@@ -33,6 +33,8 @@ function Modal({ isOpen, onClose, maxOdds }) {
                     <>
                       <div>{image.winQueen}</div>
                       {item.max_mult}
+                      <span className="shimmer"></span>
+
                     </>
                   ) : (
                     item.max_mult
