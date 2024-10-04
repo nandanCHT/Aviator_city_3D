@@ -1,19 +1,21 @@
 .submit-button {
   width: 100%;
-  background-color: #22c55e; 
+  background-color: #22c55e;
   color: #f8fafa;
-  border: none; 
+  border: none;
   padding-inline: 1.25rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
-  font-weight: 700;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 600;
   margin-inline: 5px;
   position: relative;
   overflow: hidden;
+  font-size: 1.125rem;
+  /* line-height: 1.75rem; */
 }
 
 .submit-button:hover {
@@ -27,16 +29,16 @@
 
 .cancel-button {
   width: 100%;
-  background-color: #ef4444; 
-  color: #f8fafa; 
-  border: none; 
+  background-color: #ef4444;
+  color: #f8fafa;
+  border: none;
   padding-inline: 1.25rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
   font-weight: 700;
   opacity: 1;
   margin-inline: 5px;
@@ -58,17 +60,17 @@
 
 .bet-placed {
   width: 100%;
-  background-color: var(--gray); 
-  color: #f8fafa; 
-  border: none; 
-  
+  background-color: var(--gray);
+  color: #f8fafa;
+  border: none;
+
   padding-inline: 1.25rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
   font-weight: 700;
   margin-inline: 5px;
 }
@@ -82,17 +84,17 @@
 
 .cash-out {
   width: 100%;
-  background-color: var(--success); 
-  color: #f8fafa; 
-  border: none; 
-  
+  background-color: var(--success);
+  color: #f8fafa;
+  border: none;
+
   padding-inline: 1.25rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
   font-weight: 700;
   margin-inline: 5px;
 }
@@ -102,7 +104,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-   /* padding-inline: 1.25rem;
+  /* padding-inline: 1.25rem;
    margin-inline: 5px; */
   /* padding-top: 2px;
   padding-bottom: 2px; */
@@ -110,35 +112,34 @@
 
 .Bet-placed {
   width: 100%;
-  background-color: var(--gray); 
-  color: #f8fafa; 
-  border: none; 
-  
+  background-color: var(--gray);
+  color: #f8fafa;
+  border: none;
+
   padding-inline: 1.25rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
   font-weight: 700;
   margin-inline: 5px;
-  
 }
 
-.no-balance{
-   width: 100%;
-  background-color: var(--orange); 
-  color: #f8fafa; 
-  border: none; 
-  
+.no-balance {
+  width: 100%;
+  background-color: var(--orange);
+  color: #f8fafa;
+  border: none;
+
   padding-inline: 1.25rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  border-radius: 15px; 
-  font-size: 1rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
   font-weight: 700;
   margin-inline: 5px;
 }
@@ -163,28 +164,28 @@
   }
 } */
 
-@media (max-width:640px){
-  .wating-round{
+@media (max-width: 640px) {
+  .wating-round {
     font-size: 12px;
   }
 
-  .Bet-placed{
+  .Bet-placed {
     padding-inline: 0;
   }
 
-  .submit-button{
+  .submit-button {
     padding-inline: 0;
   }
 
-  .cancel-button{
+  .cancel-button {
     padding-inline: 0;
   }
 
-  .cash-out{
+  .cash-out {
     padding-inline: 0;
   }
 
-  .no-balance{
+  .no-balance {
     font-size: 0.75rem;
   }
 }
