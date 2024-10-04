@@ -61,7 +61,7 @@ function BetButton({
   return (
     <div>
       {!isEdit &&
-        (info?.balance > 100 ? (
+        (info?.balance > 20 ? (
           <div>
             {planeStatus == 0 && !showCancel ? (
               <div
@@ -135,7 +135,7 @@ function BetButton({
                         className="cancel-button"
                         type="button"
                       >
-                        
+
                         <span>Cancel Bet</span>
                       </button>
                     </div>
@@ -185,7 +185,7 @@ function BetButton({
             ) : null}
 
             {planeStatus == 2 ||
-            (planeStatus == 1 && betData?.length && !showCancel) ? (
+              (planeStatus == 1 && betData?.length && !showCancel) ? (
               <>
                 {nextRound ? (
                   <div>

@@ -16,8 +16,9 @@
   background-color: #292829;
   margin: auto;
   padding-inline: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  /* padding-top: 10px; */
+  padding: 1rem;
+  /* padding-bottom: 20px; */
   border: 1px solid #888;
   width: 80%;
   max-width: 68%;
@@ -112,12 +113,6 @@
 } */
 
 .home-container {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  gap: 8px;
-  margin-top: 1rem; */
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 8px;
@@ -136,16 +131,23 @@
 .closePopup {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .close-btn {
   padding: 0.5rem;
-  padding-inline: 0.75rem;
+  padding-inline: 0.8rem;
+  height: 40px;
   background-color: #443135;
   color: white;
-  border: none;
-  border-radius: 9999px;
+  border-radius: 50%;
   cursor: pointer;
+  /* border: 1px solid white; */
+  border: none;
+}
+
+.close-btn p {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {

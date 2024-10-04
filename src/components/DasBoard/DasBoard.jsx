@@ -24,10 +24,10 @@ function DasBoard({
   toastColor,
   setToastColor,
 }) {
-  const [betValue, setBetValue] = useState("100");
+  const [betValue, setBetValue] = useState("20");
   const [inputValue, setInputValue] = useState("");
   const [isEdit, setIsEdit] = useState(false);
-  const [buttonValues, setButtonValues] = useState([100, 500, 1000, 2000]);
+  const [buttonValues, setButtonValues] = useState([20, 50, 100, 1000]);
   // const [buttonValues, setButtonValues] = useState(
   //   JSON.parse(localStorage.getItem("buttonValues")) || [100, 500, 1000, 2000]
   // ); // #1 Get buttonValues from localStorage if available
@@ -282,7 +282,7 @@ function DasBoard({
   };
 
   const handleMinusClick = () => {
-    setBetValue((prevValue) => Math.max(100, prevValue - 50));
+    setBetValue((prevValue) => Math.max(20, prevValue - 50));
   };
 
   const handlePlusClick = () => {
@@ -688,7 +688,7 @@ function DasBoard({
               />
               <span className="slider round"></span>
             </label>
-            <p style={{ marginLeft: "8px" }}>Auto Cashout</p>
+            <p style={{ marginLeft: "14px" }}>Auto Cashout</p>
           </div>
         </div>
 
