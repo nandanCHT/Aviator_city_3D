@@ -361,6 +361,11 @@
   color: white;
 }
 
+.auto-bet-auto {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .doganbutton-slid {
   align-items: center;
   cursor: default;

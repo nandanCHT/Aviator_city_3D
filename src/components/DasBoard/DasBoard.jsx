@@ -429,7 +429,7 @@ function DasBoard({
       setToastMessage("Auto Betting is on!");
       setToastColor("#28a745");
     } else {
-      setToastMessage("Auto Betting is off!");
+      setToastMessage("Autobetting is off!");
       setToastColor("#fd7e14");
     }
 
@@ -464,10 +464,10 @@ function DasBoard({
       setAutoCash(!autoCash);
     }
     if (!autoCash) {
-      setToastMessage("Autocash out is on");
+      setToastMessage("Auto Cashout is on");
       setToastColor("#28a745");
     } else {
-      setToastMessage("Autocash out is off");
+      setToastMessage("Auto Cashout is off!");
       setToastColor("#fd7e14");
     }
 
@@ -656,7 +656,7 @@ function DasBoard({
                     display: "flex",
                   }}
                 >
-                  <div>
+                  <div className="auto-bet-auto">
                     <p>Auto Bet </p>
                   </div>
                 </div>
@@ -685,7 +685,7 @@ function DasBoard({
               />
               <span className="slider round"></span>
             </label>
-            <p style={{ marginLeft: "14px" }}>Auto Cashout</p>
+            <p className="auto-bet-auto" style={{ marginLeft: "14px" }}>Auto Cashout</p>
           </div>
         </div>
 

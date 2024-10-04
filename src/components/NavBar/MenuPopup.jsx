@@ -42,16 +42,14 @@ function MenuPopup({
       <div className="menu-popup" onClick={(e) => e.stopPropagation()}>
         <ul>
           <li
-            // onClick={() => alert("Provably Fair clicked")}
-            style={{ color: "white" }}
+            style={{ color: "white", fontSize: "14px", fontWeight: "600" }}
           >
             Provably Fair
           </li>
+          <li
+            style={{ color: "white", fontSize: "14px", fontWeight: "600" }}
 
-          {/* <Link className="nev-bet" to="/my-bets">
-            <li>My Bets</li>
-          </Link> */}
-          <li onClick={() => handleMyBets()}>My Bets</li>
+            onClick={() => handleMyBets()}>My Bets</li>
         </ul>
       </div>
     </div>

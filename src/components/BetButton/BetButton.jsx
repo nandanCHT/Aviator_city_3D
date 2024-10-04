@@ -138,7 +138,7 @@ function BetButton({
                         <span>Cancel Bet</span>
                       </button>
                     </div>
-                    <div className="wating-round">Wating for next round</div>
+                    <div className="wating-round">Waiting for next round</div>
                   </div>
                 ) : (
                   <div className="place-btn-container">
@@ -198,7 +198,7 @@ function BetButton({
                         <span>Cancel Bet</span>
                       </button>
                     </div>
-                    <div className="wating-round">Wating for next round</div>
+                    <div className="wating-round">Waiting for next round</div>
                   </div>
                 ) : (
                   <div

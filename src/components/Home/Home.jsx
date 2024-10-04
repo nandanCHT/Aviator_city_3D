@@ -146,6 +146,7 @@ function Home() {
 
   const parsedBetData = planeData?.length > 0 ? planeData.split(":") : null;
   const planeStatus = parsedBetData?.length > 0 ? parsedBetData[2] : 0;
+  const lobby = parsedBetData?.length > 0 ? parsedBetData[0] : 0;
   // const planeMultiplier = parsedBetData?.length > 0 ? parsedBetData[1] : 0;
   const endDelay = parsedBetData?.length > 0 ? parsedBetData[1] : 0;
 
@@ -274,7 +275,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <span className="num">#45675672</span>
+                  <span className="num">#{lobby}</span>
 
                   {/* <div className="w-full">
                     <div className="dash-section"> */}
