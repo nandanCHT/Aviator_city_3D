@@ -3,22 +3,26 @@
   /* padding: auto; */
 }
 .text-gameRule {
-  padding: 8px;
+  /* padding: 8px; */
+  font-size: 24px;
   color: white;
-  font-weight: 700;
+  font-weight: 650;
+  margin-bottom: 0.8rem;
 }
 
 .rules-card {
+  min-height: 47px;
   border: 1px solid #9196a5;
   padding: 8px;
   border-radius: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-items: center;
 }
 
-
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   .main-gameRule {
-  width: 95%;
-  /* padding: auto; */
-}
+    width: 95%;
+    /* padding: auto; */
+  }
 }
