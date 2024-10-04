@@ -80,11 +80,6 @@
   border-radius: 0.5rem;
 }
 
-/*  */
-.submit-button:focus {
-  outline: none;
-  /* box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); Add custom focus ring */
-}
 /* Add this CSS to your stylesheet */
 .popup {
   visibility: hidden;
