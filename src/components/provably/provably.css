@@ -1,0 +1,118 @@
+.flowchart-main {
+  position: relative;
+  display: flex;
+  background-color: #292828;
+  width: 105vw;
+  height: 130vh;
+  top: -7.5rem;
+  left: -19rem;
+  z-index: 9999;
+  justify-content: center;
+  padding: 5rem;
+}
+.flowChat {
+  border: 2px solid white;
+
+  /* padding: 2rem; */
+  display: flex;
+  justify-content: center;
+  cursor: grab;
+  width: 90vw;
+  margin-right: 4rem;
+
+  height: 120vh;
+  background-color: #292828;
+  /* display: none; */
+}
+
+.label {
+  fill: white; /* Text color */
+  font-size: 14px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  font-weight: 600;
+}
+
+.line {
+  stroke: #e5e7eb;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5; /* Dotted line */
+  fill: transparent;
+}
+
+.box {
+  fill: none;
+  stroke: #e5e7eb;
+  rx: 6;
+  stroke-width: 2px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box button:hover {
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+  background-color: rgb(46, 44, 44); /* Changes background color on hover */
+}
+
+.line {
+  /* stroke: white; */
+  stroke-width: 2;
+  stroke-dasharray: 5, 5; /* Defines the length of dashes */
+  stroke-dashoffset: 100;
+  opacity: 0;
+  fill: transparent;
+
+  animation: drawDottedLine 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes drawDottedLine {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 10;
+    opacity: 1;
+  }
+}
+
+.lineRiverse {
+  stroke: white;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5; /* Defines the length of dashes */
+  stroke-dashoffset: 100; /* Starting offset for the dashes */
+  fill: transparent;
+
+  animation: drawDottedLineR 2s infinite;
+}
+
+@keyframes drawDottedLineR {
+  0% {
+    stroke-dashoffset: 100; /* Start with dashes fully off the path */
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 10; /* Dashes completely drawn */
+    opacity: 1;
+  }
+}
+
+.close-button {
+  color: white;
+  cursor: pointer;
+
+  /* border: 1px solid; */
+
+  font-size: 19px;
+  font-weight: 600;
+  /* border-radius: 5px; */
+  display: flex;
+  position: absolute;
+  z-index: 9999;
+  left: 1rem;
+  top: -5rem;
+}
+.backbutton {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}

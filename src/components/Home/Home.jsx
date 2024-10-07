@@ -16,6 +16,7 @@ import Toast from "../Toast/Toast";
 import MyBetSection from "../MyBetSection/MyBetSection";
 import Simple from "./Simple";
 import ChartBoard from "./ChartBoard";
+import ProvablyFair from "../provably/ProvablyFair";
 
 function Home() {
   const [error, setError] = useState("");
@@ -31,7 +32,7 @@ function Home() {
   const [toastMessage, setToastMessage] = useState("");
   const [toastColor, setToastColor] = useState("");
   const [myBetSectionModel, setMyBetSectionModel] = useState(false);
-  const [showBetDataTab, setShowBetDataTab] = useState(false)
+  const [showBetDataTab, setShowBetDataTab] = useState(false);
   const [playerCount, setPlayerCount] = useState([]);
 
   // console.log("onCashOut", oneCashout);
@@ -166,10 +167,8 @@ function Home() {
     }
   }, [endDelay]);
 
-
   return (
     <div>
-
       {!myBetSectionModel && (
         <div className="flex-container">
           <div>
@@ -195,19 +194,13 @@ function Home() {
               </div>
 
               <div className="chart-section">
-                <ChartBoard
-                  playerCount={playerCount}
-                />
+                <ChartBoard playerCount={playerCount} />
               </div>
-
 
               <div className="game-Rule">
                 <GameRule />
               </div>
-
             </div>
-
-
 
             <div className="deshboard-section">
               <div className="tab-container">
@@ -221,8 +214,9 @@ function Home() {
                   </div>
                 </div>
                 <div
-                  className={`tab ${activeTab === "luckyPlayer" ? "active" : ""
-                    }`}
+                  className={`tab ${
+                    activeTab === "luckyPlayer" ? "active" : ""
+                  }`}
                   onClick={() => handleTabChange("luckyPlayer")}
                 >
                   <div className="lucky-group">
@@ -254,8 +248,9 @@ function Home() {
               </div>
 
               <div
-                className={`tab-content ${activeTab === "dashboard" ? "active" : ""
-                  }`}
+                className={`tab-content ${
+                  activeTab === "dashboard" ? "active" : ""
+                }`}
               >
                 {/* <MainDesBoard
                 info={info}
@@ -303,8 +298,9 @@ function Home() {
                 </div>
               </div>
               <div
-                className={`tab-content ${activeTab === "luckyPlayer" ? "active" : ""
-                  }`}
+                className={`tab-content ${
+                  activeTab === "luckyPlayer" ? "active" : ""
+                }`}
               >
                 {/* <LuckyPlayer /> */}
                 <LuckyPlayers

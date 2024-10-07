@@ -197,6 +197,6 @@
   position: absolute;
   right: 0;
   width: 10rem;
-  height: 80%;
+  height: 6%;
   background: linear-gradient(to left, hsl(0, 1%, 16%), hsla(0, 0%, 100%, 0));
 }
