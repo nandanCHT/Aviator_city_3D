@@ -11,26 +11,11 @@ import BetButton from "../BetButton/BetButton";
 import CursorPointer from "./CursorPointer/CursorPointer";
 
 function DasBoard({
-  info,
-  planeData,
-  queryParams,
-  index,
-  betButton,
-  onBetPlace,
-  onCashout,
-  onSingleCashData,
-  toastMessage,
-  setToastMessage,
-  toastColor,
-  setToastColor,
-}) {
+  info, planeData, queryParams, index, betButton, onBetPlace, onCashout, onSingleCashData, toastMessage, setToastMessage, toastColor, setToastColor, }) {
   const [betValue, setBetValue] = useState("20");
   const [inputValue, setInputValue] = useState("");
   const [isEdit, setIsEdit] = useState(false);
   const [buttonValues, setButtonValues] = useState([50, 100, 200, 500]);
-  // const [buttonValues, setButtonValues] = useState(
-  //   JSON.parse(localStorage.getItem("buttonValues")) || [100, 500, 1000, 2000]
-  // ); // #1 Get buttonValues from localStorage if available
 
   const [isValidAmount, setIsValidAmount] = useState(false);
   const [isWarning, setIsWarning] = useState(true);
@@ -51,19 +36,14 @@ function DasBoard({
   const [lockCancel, setLockCancel] = useState(false);
   const [autoBet, setAutoBet] = useState(false);
   const [autoCash, setAutoCash] = useState(false);
+  const [bounce, setBounce] = useState(false);
 
   const parsedBetData = planeData?.length > 0 ? planeData.split(":") : null;
   const planeStatus = parsedBetData?.length > 0 ? parsedBetData[2] : 0;
   const planeMultiplier = parsedBetData?.length > 0 ? parsedBetData[1] : 0;
   const endDelay = parsedBetData?.length > 0 ? parsedBetData[1] : 0;
   const userAmount = Number(info.balance);
-
   const amountMultiplier = betValue * planeMultiplier;
-  // console.log("Single cash out", onSingleCashData)
-  // console.log("OneCashOut", oneCashout)
-
-  //Function
-
   useEffect(() => {
     if (autoBet) {
       if (planeStatus == 0) {
@@ -75,10 +55,6 @@ function DasBoard({
       setNextRound(false);
     }
   }, [planeStatus, autoBet, cashoutData, showCancel, betData]);
-
-  // useEffect(() => {
-  //   localStorage.setItem("buttonValues", JSON.stringify(buttonValues));
-  // }, [buttonValues]); // #2 Store buttonValues to localStorage whenever they change
 
   useEffect(() => {
     if (
@@ -247,10 +223,6 @@ function DasBoard({
     onCashout("");
     setOneCashout("");
     setTimeout(() => setToastMessage(""), 3000);
-
-    // if (autoBet && clickedIndex == index) {
-    //   handleNextClick(index);
-    // }
   };
 
   const handleCancelBet = () => {
@@ -282,21 +254,31 @@ function DasBoard({
     setAutoMultiplier(newValue);
   };
 
+  const triggerBounce = () => {
+    setBounce(true);
+    setTimeout(() => {
+      setBounce(false); // Remove the class after the animation
+    }, 300); // Same as the bounce animation duration
+  };
   const handleMinusClick = () => {
     // setBetValue((prevValue) => Math.max(100, prevValue - 50));
     setBetValue((prevValue) => {
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
       return Math.max(20, numericValue - 20); // Decrease by 1
+      triggerBounce();
+
     });
   };
 
   const handlePlusClick = () => {
     setBetValue((prevValue) => {
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
+
       const newValue = numericValue + 20; // Increase by 20
 
       // Ensure the value doesn't exceed 20000
       return newValue > 20000 ? "20000" : newValue.toString();
+
     });
   };
 
@@ -483,19 +465,23 @@ function DasBoard({
         <div className="button-section">
           <div className="bet-input-section">
             <div className="bt">
-              <button onClick={handleMinusClick} className="minus-button">
-                <HiOutlineMinus />
+              <button onClick={handleMinusClick} className={`minus-button ${bounce ? 'bounce' : ''}`}>
+                <p><HiOutlineMinus /></p>
               </button>
-              <input
-                type="input"
-                onChange={handleInputChange}
-                onFocus={handleInputFocus}
-                // onKeyDown={handleInputKeyDown}
-                onBlur={handlerOnBlur}
-                className="value-input"
-                value={betValue}
-              />
-              <button onClick={handlePlusClick} className="plus-button">
+              <div className="">
+                <input
+                  type="input"
+                  onChange={handleInputChange}
+                  // onFocus={handleInputFocus}
+                  // onKeyDown={handleInputKeyDown}
+                  onBlur={handlerOnBlur}
+                  className="value-input"
+                  value={betValue}
+                  onFocus={(e) => e.target.select()}
+
+                />
+              </div>
+              <button onClick={handlePlusClick} className={`plus-button ${bounce ? 'bounce' : ''}`}>
                 <GoPlus />
               </button>
             </div>
