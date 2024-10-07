@@ -1,29 +1,6 @@
-// // MenuPopup.js
-// import React from "react";
-// import "./MenuPopup.css"; // Create a CSS file for styling
-// import { useNavigate } from "react-router-dom";
-
-// function MenuPopup({ isOpen, onClose }) {
-//   if (!isOpen) return null;
-//   const navigate = useNavigate();
-
-//   return (
-//     <div className="menu-popup-overlay" onClick={onClose}>
-//       <div className="menu-popup" onClick={(e) => e.stopPropagation()}>
-//         <ul>
-//           <li onClick={() => alert('Provably Fair clicked')} style={{color:"white"}}>Provably Fair</li>
-//           <li ><span><Link className='nev-bet' to='/mybets'></Link>My Bets</span></li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default MenuPopup;
-
 import React from "react";
 import { Link } from "react-router-dom";
-import "./MenuPopup.css"; // Ensure this file contains the appropriate styles
+import "./MenuPopup.css";
 
 function MenuPopup({
   isOpen,
@@ -36,20 +13,23 @@ function MenuPopup({
   const handleMyBets = () => {
     setMyBetSectionModel((prv) => !prv);
   };
+  const handlegaph = () => {
+    setMyBetSectionModel((prv) => !prv);
+  };
 
   return (
     <div className="menu-popup-overlay" onClick={onClose}>
       <div className="menu-popup" onClick={(e) => e.stopPropagation()}>
         <ul>
-          <li
-            style={{ color: "white", fontSize: "14px", fontWeight: "600" }}
-          >
+          <li style={{ color: "white", fontSize: "14px", fontWeight: "600" }}>
             Provably Fair
           </li>
           <li
             style={{ color: "white", fontSize: "14px", fontWeight: "600" }}
-
-            onClick={() => handleMyBets()}>My Bets</li>
+            onClick={() => handleMyBets()}
+          >
+            My Bets
+          </li>
         </ul>
       </div>
     </div>

@@ -58,7 +58,7 @@
 import React from "react";
 import { image } from "../../assets/image";
 import { useState, useEffect } from "react";
-import {socket} from '../../utils/newSocket'
+import { socket } from "../../utils/newSocket";
 import "./MyBetSection.css";
 import MyBetSectionCard from "../MyBetSectionCard/MyBetSectionCard";
 import data from "../../dataa";
@@ -66,13 +66,18 @@ import MyBetSectionDetails from "../MyBetSectionDetails/MyBetSectionDetails";
 import { useNavigate } from "react-router-dom";
 import { getCaller } from "../../utils/api";
 
-function MyBetSection({ info, myBetSectionModel, setMyBetSectionModel, oneCashout }) {
+function MyBetSection({
+  info,
+  myBetSectionModel,
+  setMyBetSectionModel,
+  oneCashout,
+}) {
   const [betData, setBetData] = useState(data);
   const [myBetDetailsModel, setMyBetDetailsModel] = useState(false);
   const [myBetData, setMyBetData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [crashedData, setCrashedData] = useState([]);
-  const [singleBetdata, setSingleBetData] = useState([])
+  const [singleBetdata, setSingleBetData] = useState([]);
   // console.log("Info ",info?.id)
   // console.log("info op", info?.operator_id)
 
@@ -81,7 +86,7 @@ function MyBetSection({ info, myBetSectionModel, setMyBetSectionModel, oneCashou
       `mybets?userId=${info?.id}&operator_id=${info?.operator_id}&limit=20`
     );
     const newMyBet = res?.data;
-    
+
     setMyBetData(newMyBet);
     setLoading(false);
   };
@@ -110,7 +115,7 @@ function MyBetSection({ info, myBetSectionModel, setMyBetSectionModel, oneCashou
   // console.log("MyBetdata",myBetData)
 
   const handleMyBetsDetails = (data) => {
-    setSingleBetData(data)
+    setSingleBetData(data);
     setMyBetDetailsModel((prv) => !prv);
   };
 
@@ -121,14 +126,12 @@ function MyBetSection({ info, myBetSectionModel, setMyBetSectionModel, oneCashou
       {!myBetDetailsModel && (
         <div className="myBetContainer">
           <div className="myBetNavBar">
-            <div className="backIconContainer">
+            <div
+              className="backIconContainer"
+              onClick={() => setMyBetSectionModel((prv) => !prv)}
+            >
               <div className="backIcon">{image.backButton}</div>
-
-              <div>
-                <strong onClick={() => setMyBetSectionModel((prv) => !prv)}>
-                  Back
-                </strong>
-              </div>
+              <strong>Back</strong>
             </div>
             <div className="reload">
               <div className="reloadIcon">{image.reload}</div>

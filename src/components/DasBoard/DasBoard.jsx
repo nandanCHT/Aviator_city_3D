@@ -299,7 +299,8 @@ function DasBoard({
   };
 
   const handleButtonClick = (buttonValue) => {
-    setBetValue((prevValue) => Number(prevValue) + buttonValue);
+    // setBetValue((prevValue) => Number(prevValue) + buttonValue);
+    setBetValue(buttonValue);
   };
 
   const handleInputChange = (event) => {
@@ -685,7 +686,9 @@ function DasBoard({
               />
               <span className="slider round"></span>
             </label>
-            <p className="auto-bet-auto" style={{ marginLeft: "14px" }}>Auto Cashout</p>
+            <p className="auto-bet-auto" style={{ marginLeft: "14px" }}>
+              Auto Cashout
+            </p>
           </div>
         </div>
 

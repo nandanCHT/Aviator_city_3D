@@ -41,16 +41,9 @@ function CursorPointer() {
           <div style={{ padding: ".75rem" }}>
             <div
               className="headerbar"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "16rem",
-                minHeight: "4.5rem",
-                cursor: "pointer", // Add a pointer cursor to indicate clickability
-              }}
               onClick={handleCutClick} // Close dropdown on headerbar click
             >
-              <div style={{ display: "flex", gap: "2rem" }}>
+              <div style={{ display: "flex", gap: ".5rem", fontWeight: "600" }}>
                 <div className="roundedBorder">
                   <span>1</span>
                 </div>
@@ -66,24 +59,9 @@ function CursorPointer() {
             </div>
 
             {/* Rounds Section */}
-            <div
-              style={{
-                borderTop: "2px solid #9196a5",
-                minHeight: "6rem",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
+            <div className="roundSection">
               <div style={{ display: "flex", gap: ".75rem" }}>
-                <span
-                  style={{
-                    marginTop: "1rem",
-                    fontSize: "20px",
-                    opacity: "0.7",
-                  }}
-                >
-                  Rounds
-                </span>
+                <span className="roundfont">Rounds</span>
 
                 {["10", "20", "50", "80", image.infinite].map((value) => (
                   <button
@@ -169,7 +147,10 @@ function CursorPointer() {
             </div>
 
             {/* submit */}
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{ display: "flex", justifyContent: "center" }}
+              className=""
+            >
               <button onClick={handleClick} className="submitbutton">
                 Save
               </button>
