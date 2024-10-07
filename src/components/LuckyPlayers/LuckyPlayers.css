@@ -57,6 +57,7 @@
   font-weight: 700;
   gap: 1rem;
   cursor: default;
+  user-select: none;
 }
 
 .lp_q {
