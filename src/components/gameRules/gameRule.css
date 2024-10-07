@@ -18,6 +18,7 @@
   margin-bottom: 0.5rem;
   display: flex;
   justify-items: center;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
