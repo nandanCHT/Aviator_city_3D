@@ -11,7 +11,19 @@ import BetButton from "../BetButton/BetButton";
 import CursorPointer from "./CursorPointer/CursorPointer";
 
 function DasBoard({
-  info, planeData, queryParams, index, betButton, onBetPlace, onCashout, onSingleCashData, toastMessage, setToastMessage, toastColor, setToastColor, }) {
+  info,
+  planeData,
+  queryParams,
+  index,
+  betButton,
+  onBetPlace,
+  onCashout,
+  onSingleCashData,
+  toastMessage,
+  setToastMessage,
+  toastColor,
+  setToastColor,
+}) {
   const [betValue, setBetValue] = useState("20");
   const [inputValue, setInputValue] = useState("");
   const [isEdit, setIsEdit] = useState(false);
@@ -266,19 +278,16 @@ function DasBoard({
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
       return Math.max(20, numericValue - 20); // Decrease by 1
       triggerBounce();
-
     });
   };
 
   const handlePlusClick = () => {
     setBetValue((prevValue) => {
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
-
       const newValue = numericValue + 20; // Increase by 20
 
       // Ensure the value doesn't exceed 20000
       return newValue > 20000 ? "20000" : newValue.toString();
-
     });
   };
 
@@ -465,8 +474,13 @@ function DasBoard({
         <div className="button-section">
           <div className="bet-input-section">
             <div className="bt">
-              <button onClick={handleMinusClick} className={`minus-button ${bounce ? 'bounce' : ''}`}>
-                <p><HiOutlineMinus /></p>
+              <button
+                onClick={handleMinusClick}
+                className={`minus-button ${bounce ? "bounce" : ""}`}
+              >
+                <p>
+                  <HiOutlineMinus />
+                </p>
               </button>
               <div className="">
                 <input
@@ -478,10 +492,12 @@ function DasBoard({
                   className="value-input"
                   value={betValue}
                   onFocus={(e) => e.target.select()}
-
                 />
               </div>
-              <button onClick={handlePlusClick} className={`plus-button ${bounce ? 'bounce' : ''}`}>
+              <button
+                onClick={handlePlusClick}
+                className={`plus-button ${bounce ? "bounce" : ""}`}
+              >
                 <GoPlus />
               </button>
             </div>
