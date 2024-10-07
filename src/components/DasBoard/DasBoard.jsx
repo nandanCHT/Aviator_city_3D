@@ -284,20 +284,10 @@ function DasBoard({
   const handlePlusClick = () => {
     setBetValue((prevValue) => {
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
-<<<<<<< HEAD
-=======
-
->>>>>>> 3d438f09c61f1753fadac7e36740bcdda2f5d841
       const newValue = numericValue + 20; // Increase by 20
 
       // Ensure the value doesn't exceed 20000
       return newValue > 20000 ? "20000" : newValue.toString();
-<<<<<<< HEAD
-      return numericValue + 20; // Increase by 1
-      triggerBounce();
-=======
-
->>>>>>> 3d438f09c61f1753fadac7e36740bcdda2f5d841
     });
   };
 
