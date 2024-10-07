@@ -107,10 +107,9 @@ function BetButton({
                       <button
                         disabled={planeStatus == 0 && Number(endDelay) >= 6}
                         onClick={() => handleCancelBet(index)}
-                        className="cancel-button"
+                        className="cancel-button-animation"
                         type="button"
                       >
-
                         <span>Cancel Bet</span>
                       </button>
                     </div>
@@ -134,7 +133,6 @@ function BetButton({
                         className="cancel-button"
                         type="button"
                       >
-                      
                         <span>Cancel Bet</span>
                       </button>
                     </div>
@@ -147,7 +145,7 @@ function BetButton({
                       className="bet-btn place-btn"
                       type="button"
                     >
-                      <span className='shimmer'></span>
+                      <span className="shimmer"></span>
                       <span>Next Bet</span>
                     </button>
                   </div>
@@ -179,7 +177,7 @@ function BetButton({
             ) : null}
 
             {planeStatus == 2 ||
-              (planeStatus == 1 && betData?.length && !showCancel) ? (
+            (planeStatus == 1 && betData?.length && !showCancel) ? (
               <>
                 {nextRound ? (
                   <div>
@@ -201,15 +199,13 @@ function BetButton({
                     <div className="wating-round">Waiting for next round</div>
                   </div>
                 ) : (
-                  <div
-                    className="place-btn-container"
-                  >
+                  <div className="place-btn-container">
                     <button
                       onClick={() => handleNextClick(index)}
                       className="bet-btn place-btn"
                       type="button"
                     >
-                      <span className='shimmer'></span>
+                      <span className="shimmer"></span>
                       <span>Next Bet</span>
                     </button>
                   </div>
