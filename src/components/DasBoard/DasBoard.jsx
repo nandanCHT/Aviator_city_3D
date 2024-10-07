@@ -465,7 +465,7 @@ function DasBoard({
       setAutoCash(!autoCash);
     }
     if (!autoCash) {
-      setToastMessage("Auto Cashout is on");
+      setToastMessage("Auto Cashout is on!");
       setToastColor("#28a745");
     } else {
       setToastMessage("Auto Cashout is off!");

@@ -364,6 +364,8 @@
 .auto-bet-auto {
   font-size: 14px;
   font-weight: 600;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
 }
 
 .doganbutton-slid {
@@ -401,6 +403,8 @@
   font-size: 0.875rem;
   font-weight: 400;
   cursor: default;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
 }
 
 .autoBet {

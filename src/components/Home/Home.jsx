@@ -214,14 +214,13 @@ function Home() {
                   </div>
                 </div>
                 <div
-                  className={`tab ${
-                    activeTab === "luckyPlayer" ? "active" : ""
-                  }`}
+                  className={`tab ${activeTab === "luckyPlayer" ? "active" : ""
+                    }`}
                   onClick={() => handleTabChange("luckyPlayer")}
                 >
                   <div className="lucky-group">
-                    <div>{image.luckyPlayer}</div>
-                    <div>Lucky Player</div>
+                    <p>{image.luckyPlayer}</p>
+                    <p>Lucky Player</p>
                     {showBetDataTab ? (
                       <h2
                         className="lp_p"
@@ -248,9 +247,8 @@ function Home() {
               </div>
 
               <div
-                className={`tab-content ${
-                  activeTab === "dashboard" ? "active" : ""
-                }`}
+                className={`tab-content ${activeTab === "dashboard" ? "active" : ""
+                  }`}
               >
                 {/* <MainDesBoard
                 info={info}
@@ -298,9 +296,8 @@ function Home() {
                 </div>
               </div>
               <div
-                className={`tab-content ${
-                  activeTab === "luckyPlayer" ? "active" : ""
-                }`}
+                className={`tab-content ${activeTab === "luckyPlayer" ? "active" : ""
+                  }`}
               >
                 {/* <LuckyPlayer /> */}
                 <LuckyPlayers

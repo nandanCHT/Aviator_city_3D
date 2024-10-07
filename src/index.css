@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  user-select: none;
 }
 input {
   border: none;
@@ -232,6 +233,9 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+
   }
 
   /* .tab.active {
@@ -263,6 +267,9 @@ body {
   .num {
     display: none;
     cursor: default;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+
   }
 }
 
