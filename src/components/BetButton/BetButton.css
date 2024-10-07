@@ -42,6 +42,23 @@
   opacity: 1;
   margin-inline: 5px;
 }
+.cancel-button-animation {
+  width: 100%;
+  background-color: #ef4444;
+  color: #f8fafa;
+  border: none;
+  padding-inline: 1.25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  /* transition: background-color 0.3s, transform 0.2s; */
+  font-weight: 700;
+  opacity: 1;
+  margin-inline: 5px;
+  /* transition: background-color 0.3s ease; */
+}
 
 .wating-round {
   padding: 0.5rem;

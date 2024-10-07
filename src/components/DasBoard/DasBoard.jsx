@@ -291,10 +291,12 @@ function DasBoard({
   };
 
   const handlePlusClick = () => {
-    // setBetValue((prevValue) => prevValue + 50);
     setBetValue((prevValue) => {
       const numericValue = parseInt(prevValue, 10) || 0; // Ensure it's a number
-      return numericValue + 20; // Increase by 1
+      const newValue = numericValue + 20; // Increase by 20
+
+      // Ensure the value doesn't exceed 20000
+      return newValue > 20000 ? "20000" : newValue.toString();
     });
   };
 
@@ -354,7 +356,7 @@ function DasBoard({
       const numericValue = Number(value);
       setInputValue(value);
       setIsWarning(false);
-      if (numericValue >= 20 && numericValue <= 10000) {
+      if (numericValue >= 20 && numericValue <= 20000) {
         setIsValidAmount(false);
       } else {
         setIsValidAmount(true);
@@ -371,7 +373,7 @@ function DasBoard({
         !buttonValues.includes(newValue) &&
         newValue > 0 &&
         newValue >= 20 &&
-        newValue <= 200000
+        newValue <= 20000
       ) {
         // console.log("Adding new value:", newValue);
         setButtonValues((prevButtonValues) => [...prevButtonValues, newValue]);
@@ -390,7 +392,7 @@ function DasBoard({
       !buttonValues.includes(newValue) &&
       newValue > 0 &&
       newValue >= 20 &&
-      newValue <= 200000
+      newValue <= 20000
     ) {
       // console.log("Adding new value:", newValue);
       setButtonValues((prevButtonValues) => [...prevButtonValues, newValue]);
