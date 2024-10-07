@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   background-color: #292828;
-  width: 105vw;
-  height: 130vh;
+  width: 100%;
+  height: 100%;
   top: -7.5rem;
   left: -19rem;
   z-index: 9999;
@@ -12,15 +12,14 @@
 }
 .flowChat {
   border: 2px solid white;
-
   /* padding: 2rem; */
   display: flex;
   justify-content: center;
   cursor: grab;
   width: 90vw;
-  margin-right: 4rem;
-
-  height: 120vh;
+  /* width: 100%; */
+  /* margin-right: 4rem; */
+  height: 170vh;
   background-color: #292828;
   /* display: none; */
 }
@@ -99,12 +98,8 @@
 .close-button {
   color: white;
   cursor: pointer;
-
-  /* border: 1px solid; */
-
   font-size: 19px;
   font-weight: 600;
-  /* border-radius: 5px; */
   display: flex;
   position: absolute;
   z-index: 9999;

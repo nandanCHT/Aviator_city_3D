@@ -35,18 +35,6 @@ function Home() {
   const [showBetDataTab, setShowBetDataTab] = useState(false);
   const [playerCount, setPlayerCount] = useState([]);
 
-  // console.log("onCashOut", oneCashout);
-  // console.log("cashoutData", cashoutData)
-
-  // console.log(error);
-  // console.log("Socket Conected", socketConnected);
-  // console.log("Info", info);
-  // console.log("PlaneData", planeData);
-  // console.log("BetData", betData)
-  // console.log("OnCashoutdata", oneCashout);
-  // console.log("Cashoutdata", cashoutData);
-  // console.log("BetDataLength", betData.length)
-
   const { unityProvider, loadingProgression, sendMessage } = useUnityContext({
     loaderUrl: "/assets/Aviator3DCity.loader.js",
     dataUrl: "/assets/Aviator3DCity.data",
@@ -250,28 +238,17 @@ function Home() {
                 className={`tab-content ${activeTab === "dashboard" ? "active" : ""
                   }`}
               >
-                {/* <MainDesBoard
-                info={info}
-                planeData={planeData}
-                queryParams={queryParams}
-              ></MainDesBoard> */}
-
-                {/* <Deshboard_1 /> */}
-                {/* <MainDeshBoard></MainDeshBoard> */}
+             
                 <div className="M-full">
                   <div className="deshboard-upr">
                     <div className="deshboard-upr2">
                       <div className="deshboard-rocket">
                         <p>{image.rocket}</p>
-                        {/* Assuming this renders the rocket image/icon */}
                         <p className="deshboard-p">Dashboard</p>
                       </div>
                     </div>
                   </div>
                   <span className="num">#{lobby}</span>
-
-                  {/* <div className="w-full">
-                    <div className="dash-section"> */}
                   <div className="w-full ">
                     {betButton.slice(0, 2).map((el, i) => (
                       <DasBoard
@@ -291,15 +268,13 @@ function Home() {
                       />
                     ))}
                   </div>
-                  {/* </div>
-                  </div> */}
+              
                 </div>
               </div>
               <div
                 className={`tab-content ${activeTab === "luckyPlayer" ? "active" : ""
                   }`}
               >
-                {/* <LuckyPlayer /> */}
                 <LuckyPlayers
                   betData={betData}
                   cashoutData={cashoutData}
